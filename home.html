@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,22 +10,209 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- font awesome cdn link -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Added Google font: Geist  -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 
     <!-- Style CSS -->
-     <style>
-        *{
+    <style>
+        * {
             font-family: "Open Sans", sans-serif;
         }
-     </style>
+    </style>
 
 </head>
-<body>
-    
+<body class="bg-[#F8FAFC]">
+    <header style="max-width: 1110px; margin: 0 auto; padding-top: 60px;">
+        <h1 class="text-[32px] font-bold">Job Application Tracker</h1>
+        <div class="tracker-cards text-neutral grid grid-cols-3 gap-5 mt-5">
+            <div class="card bg-white p-5">
+                <h4 class="text-sm font-medium">Total</h4>
+                <span class="text-2xl font-bold">8</span>
+            </div>
+            <div class="card bg-white p-5">
+                <h4 class="text-sm font-medium">Interview</h4>
+                <span class="text-2xl font-bold text-accent">0</span>
+            </div>
+            <div class="card bg-white p-5">
+                <h4 class="text-sm font-medium">Rejected</h4>
+                <span class="text-2xl font-bold text-error">0</span>
+            </div>
+        </div>
+        <div class="border-b-2 mt-5 border-gray-200"></div>
+    </header>
+    <section style="max-width: 1110px; margin: 0 auto;">
+        <div class="count-Category flex justify-between mt-7">
+            <h3 class="text-xl font-bold">Available Jobs</h3>
+            <p class="text-lg font-medium text-[#64748B]"><span>8</span> jobs</p>
+        </div>
+        <div class="jobs-btn flex gap-2 mt-6">
+            <button class="btn bg-white  px-10 text-[#64748B] rounded-lg text-center">All</button>
+            <button class="btn bg-white px-5 text-[#64748B] rounded-lg text-center">Interview</button>
+            <button class="btn bg-white px-5 text-[#64748B] rounded-lg text-center">Rejected</button>
+        </div>
+        <div class="job-cards mt-4 space-y-5">
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5 flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5  flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5 flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5 flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5 flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5 flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5 flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <div class="job-details flex justify-between bg-white p-6 rounded-lg">
+                <div class="card-left">
+                    <h3 class="text-[18px] font-semibold">Mobile First Corp</h3>
+                    <p class="text-[#64748B]">React Native Developer</p>
+                    <p class="text-[#64748B] text-sm mt-5">Remote • Full-time • $130,000 - $175,000</p>
+                    <span class="badge bg-[#EEF4FF] px-3 py-4 text-sm font-medium mt-5">NOT APPLIED</span>
+                    <p class="text-sm mt-2">Build cross-platform mobile applications using React Native. Work on
+                        products used by millions of users worldwide.</p>
+                    <div class="card-btn mt-5 flex gap-2">
+                        <button class="btn border-accent text-accent">Interview</button>
+                        <button class="btn border-error text-error">Rejected</button>
+                    </div>
+                </div>
+                <div class="delete-icon border rounded-full w-8 h-8 p-2 border-gray-300">
+                    <button onclick="alert('Hello Bhai')">
+                        <img class="w-6" src="./images/trash_bin_icon-icons.com_67981.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
